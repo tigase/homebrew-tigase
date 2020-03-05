@@ -8,14 +8,6 @@
   </a>
 </p>
 
-<p align="center">
-  Highly optimized, extremely modular and very flexible XMPP/Jabber server
-</p>
-
-<p align="center">
-  <img alt="Tigase Tigase Logo" src="https://github.com/tigase/website-assets/blob/master/tigase/images/tigase-logo.png?raw=true" width="25"/>
-</p>
-
 # Tigase Homebrew repository
 
 A collection of various formulas and cask intended to be installed using Homebrew macOS package manager.
