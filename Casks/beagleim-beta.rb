@@ -8,5 +8,5 @@ cask 'beagleim-beta' do
   name 'Tigase BeagleIM beta'
   homepage 'https://beagle.im/'
 
-  app "BeagleIM #{version.major_minor}.app"
+  app "BeagleIM 4.0.app"
 end
