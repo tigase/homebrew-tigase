@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://tigase.net/">
     <img
-      alt="Highly optimized, extremely modular and very flexible XMPP/Jabber server"
+      alt="Tigase: Highly optimized, extremely modular and very flexible XMPP/Jabber server"
       src="https://github.com/tigase/website-assets/blob/master/tigase/images/tigase-logo.png?raw=true"
       width="300"
     />
@@ -10,19 +10,20 @@
 
 # Tigase Homebrew repository
 
-A collection of various formulas and cask intended to be installed using Homebrew macOS package manager.
+A collection of various formulae and casks intended to be installed using the [Homebrew][brew] macOS package manager.
 
 ## How do I install these formulae?
 
 Add this tap by executing `brew tap tigase/tigase`
 
-and then install desired formula/cask:
-* [BeagleIM](https://beagle.im/): `brew install beagleim`
-* [BeagleIM (beta)](https://beagle.im/): `brew install beagleim-beta`
+and then install the desired formula or cask:
+* [BeagleIM](https://beagle.im/): `brew cask install beagleim`
+* [BeagleIM (beta)](https://beagle.im/): `brew cask install beagleim-beta`
 
 NOTE: Beta releases may be unstable and by installing them you take full responsibility.
 
 ## Brew Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew help`, `man brew`, or check [Homebrew's documentation][brew-docs].
 
-
+[brew]: https://brew.sh
+[brew-docs]: https://docs.brew.sh
