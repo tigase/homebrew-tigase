@@ -17,8 +17,8 @@ A collection of various formulae and casks intended to be installed using the [H
 Add this tap by executing `brew tap tigase/tigase`
 
 and then install the desired formula or cask:
-* [BeagleIM](https://beagle.im/): `brew cask install beagleim`
-* [BeagleIM (beta)](https://beagle.im/): `brew cask install beagleim-beta`
+* [BeagleIM](https://beagle.im/) ([GitHub](https://github.com/tigase/beagle-im/)): `brew cask install beagleim`
+* [BeagleIM (beta)](https://beagle.im/) ([GitHub](https://github.com/tigase/beagle-im/)): `brew cask install beagleim-beta`
 
 NOTE: Beta releases may be unstable and by installing them you take full responsibility.
 
