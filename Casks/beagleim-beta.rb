@@ -8,5 +8,7 @@ cask 'beagleim-beta' do
   name 'Tigase BeagleIM beta'
   homepage 'https://beagle.im/'
 
+  depends_on macos: ">= :mojave"
+
   app "BeagleIM (beta).app"
 end
