@@ -9,4 +9,10 @@ cask 'beagleim-beta' do
   homepage 'https://beagle.im/'
 
   app "BeagleIM (beta).app"
+
+  zap trash: [
+    "~/Library/Saved Application State/org.tigase.messenger.BeagleIM.savedState",
+    "~/Library/Application Scripts/org.tigase.messenger.BeagleIM",
+    "~/Library/Containers/org.tigase.messenger.BeagleIM",
+  ]
 end
