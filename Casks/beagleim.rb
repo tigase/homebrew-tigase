@@ -11,4 +11,10 @@ cask 'beagleim' do
   depends_on macos: ">= :mojave"
 
   app "BeagleIM.app"
+
+  zap trash: [
+    "~/Library/Saved Application State/org.tigase.messenger.BeagleIM.savedState",
+    "~/Library/Application Scripts/org.tigase.messenger.BeagleIM",
+    "~/Library/Containers/org.tigase.messenger.BeagleIM",
+  ]
 end
