@@ -6,6 +6,7 @@ cask 'beagleim-beta' do
   url "https://github.com/tigase/beagle-im/releases/download/#{version}/BeagleIM.#{version}.zip"
   appcast 'https://github.com/tigase/beagle-im/releases.atom'
   name 'Tigase BeagleIM beta'
+  desc 'XMPP client based on TigaseSwift library'
   homepage 'https://beagle.im/'
 
   depends_on macos: ">= :mojave"
