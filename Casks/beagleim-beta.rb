@@ -11,7 +11,7 @@ cask 'beagleim-beta' do
 
   depends_on macos: ">= :mojave"
 
-  caveats "Beta version may be unstable and contains database schema changes which will make it impossible to rollback to older version. We do suggest to copy `beagleim.sqlite` file using Finder to the safe location before starting the new beta version of BeagleIM."
+  caveats "Beta version may be unstable and contain database schema changes which will make it impossible to rollback to older version. We suggest to copy `beagleim.sqlite` file using Finder to the safe location before starting a new beta version of BeagleIM."
   
   app "BeagleIM (beta).app"
 
