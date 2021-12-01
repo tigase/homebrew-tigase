@@ -9,7 +9,7 @@ cask 'beagleim' do
   desc 'XMPP client based on TigaseSwift library'
   homepage 'https://beagle.im/'
 
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :catalina"
 
   app "BeagleIM.app"
 
