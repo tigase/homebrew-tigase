@@ -1,6 +1,6 @@
 cask 'beagleim-beta' do
-  version '5.3.2-b168'
-  sha256 '2a60aa4b971b5116fc5a239288fd798bc2e6a86b8c57c4fe29bb4bcb2c9a1842'
+  version '5.3.2-b169'
+  sha256 'c0c66010fb197d5ca065d4f8d8ae8294d9be21412e744e333cf2c8c20fdbe72e'
 
   # github.com/tigase/beagle-im was verified as official when first introduced to the cask
   url "https://github.com/tigase/beagle-im/releases/download/#{version}/BeagleIM.#{version}.zip"
