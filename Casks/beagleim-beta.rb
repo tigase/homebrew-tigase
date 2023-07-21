@@ -2,17 +2,21 @@ cask 'beagleim-beta' do
   version '5.3.5-b178'
   sha256 '9fe59d7e730fec9dae8e90c67f15bc20958f496c1ae1a8f1d801b1e22f262e3b'
 
-  # github.com/tigase/beagle-im was verified as official when first introduced to the cask
   url "https://github.com/tigase/beagle-im/releases/download/#{version}/BeagleIM.#{version}.zip"
-  appcast 'https://github.com/tigase/beagle-im/releases.atom'
   name 'Tigase BeagleIM beta'
   desc 'XMPP client based on TigaseSwift library'
   homepage 'https://beagle.im/'
 
+  livecheck do
+    url :url
+    regex(/^(?:BeagleIM )?v?(\d+\.\d+\.\d+-b\d+)$/i)
+    strategy :github_releases
+  end
+
   depends_on macos: ">= :catalina"
 
-  caveats "Beta version may be unstable and contain database schema changes which will make it impossible to rollback to older version. We suggest to copy `beagleim.sqlite` file using Finder to the safe location before starting a new beta version of BeagleIM."
-  
+  caveats "Beta versions may be unstable and contain database schema changes which cannot be rolled back to an older version. We suggest using Finder to copy the `beagleim.sqlite` file to a safe location before starting a new beta version of BeagleIM."
+
   app "BeagleIM (beta).app"
 
   zap trash: [
