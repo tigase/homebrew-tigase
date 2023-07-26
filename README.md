@@ -14,16 +14,20 @@ A collection of various formulae and casks intended to be installed using the [H
 
 ## How do I install these formulae?
 
-Add this tap by executing `brew tap tigase/tigase`
+Add this tap by executing `brew tap tigase/tigase` and then install the desired formula or cask:
 
-and then install the desired formula or cask:
-* [BeagleIM](https://beagle.im/) ([GitHub](https://github.com/tigase/beagle-im/)): `brew install beagleim`
-* [BeagleIM (beta)](https://beagle.im/) ([GitHub](https://github.com/tigase/beagle-im/)): `brew install beagleim-beta`
+| App          | Channel | Source                    | Install command         |
+|--------------|---------|---------------------------|-------------------------|
+| [BeagleIM][] | Stable  | [GitHub][beagleim-source] | `brew install beagleim` |
+| [BeagleIM][] | Beta    | [GitHub][beagleim-source] | `brew install beagleim-beta` |
 
-NOTE: Beta releases may be unstable and by installing them you take full responsibility.
+**Note:** Beta releases may be unstable and by installing them you take full responsibility.
 
 ## Brew Documentation
 `brew help`, `man brew`, or check [Homebrew's documentation][brew-docs].
 
 [brew]: https://brew.sh
 [brew-docs]: https://docs.brew.sh
+
+[BeagleIM]: https://beagle.im
+[beagleim-source]: https://github.com/tigase/beagle-im
