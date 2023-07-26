@@ -9,8 +9,17 @@ cask 'beagleim-beta' do
 
   livecheck do
     url :url
-    regex(/^(?:BeagleIM )?v?(\d+\.\d+\.\d+-b\d+)$/i)
-    strategy :github_releases
+    regex(/^(\d+\.\d+\(?:.\d+)?-b\d+)$/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        next if release["draft"] || !release["prerelease"]
+
+        match = json["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   depends_on macos: ">= :catalina"
