@@ -9,7 +9,6 @@ cask 'beagleim' do
 
   livecheck do
     url :url
-    regex(/^(?:BeagleIM )?v?(\d+\.\d+\.\d+)$/i)
     strategy :github_releases
   end
 
