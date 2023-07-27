@@ -9,7 +9,7 @@ cask 'beagleim-beta' do
 
   livecheck do
     url :url
-    regex(/^(\d+\.\d+\(?:.\d+)?-b\d+)$/i)
+    regex(/v?(\d+(?:\.\d+)+-b\d+)/i)
     strategy :github_releases do |json, regex|
       json.map do |release|
         next if release["draft"] || !release["prerelease"]
