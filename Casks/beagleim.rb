@@ -9,7 +9,7 @@ cask 'beagleim' do
 
   livecheck do
     url :url
-    strategy :github_releases
+    strategy :github_latest
   end
 
   depends_on macos: ">= :catalina"
