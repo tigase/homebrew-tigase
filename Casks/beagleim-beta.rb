@@ -12,12 +12,13 @@ cask 'beagleim-beta' do
     regex(/v?(\d+(?:\.\d+)+-b\d+)/i)
     strategy :github_releases do |json, regex|
       json.map do |release|
-        next if release["draft"] || !release["prerelease"]
+        # Only choose prereleases
+        next if release['draft'] || !release['prerelease']
 
-        match = json["tag_name"]&.match(regex)
-        next if match.blank?
+        version_match = release['tag_name']&.match(regex)
+        next if version_match.blank?
 
-        match[1]
+        version_match[1]
       end
     end
   end
