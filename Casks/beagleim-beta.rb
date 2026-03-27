@@ -1,6 +1,6 @@
 cask 'beagleim-beta' do
-  version '6.0.1-b194'
-  sha256 '41c3b29eb2795c2a08c37d22b04481a7990547469d30e5933bf61b2c2b99a382'
+  version '6.0.1-b195'
+  sha256 '4a447a14c19dbbb9f8020522a1aa81dbddbfd4398dda9307030685d45799560b'
 
   url "https://github.com/tigase/beagle-im/releases/download/#{version}/BeagleIM.#{version}.zip"
   name 'Tigase BeagleIM beta'
