@@ -23,7 +23,7 @@ cask 'beagleim-beta' do
     end
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   caveats "Beta versions may be unstable and contain database schema changes which cannot be rolled back to an older version. We suggest using Finder to copy the `beagleim.sqlite` file to a safe location before starting a new beta version of BeagleIM."
 
